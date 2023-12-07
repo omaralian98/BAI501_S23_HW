@@ -10,4 +10,4 @@ for i in range(1, 101):
     path, discovered, visited = AStar.find_path(initial, Game.misplaced_tiles)
     path1, discovered1, visited1 = AStar.find_path(initial, Game.manhattan_distance)
     print(format(i, '<3') + '-\t' + str(len(path)) + ' \t\t\t' + format(EBF.get(len(path), discovered), '.4f') +
-          '\t\t\t\t\t' + format(EBF.get(len(path1), discovered1), '.4f'))
+          '\t\t\t\t' + format(EBF.get(len(path1), discovered1), '.4f'))
