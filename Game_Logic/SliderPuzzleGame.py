@@ -80,7 +80,7 @@ class SliderPuzzleGame:
         board[self.size - 1][self.size - 1] = 0
         board = public_shuffle_2d_list(board)
         while self.is_solvable(board) is False:
-            shuffle(board)
+            board = public_shuffle_2d_list(board)
         return board
 
     def count_inversions(self, arr):
