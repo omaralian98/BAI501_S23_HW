@@ -24,7 +24,6 @@ def find_path(initial, heuristic):
     while lst:
         visited_nodes += 1
         custom = heapq.heappop(lst)
-        cost = custom.cost
         current = custom.state
         if current.is_over():
             return construct_path(current), discovered_nodes, visited_nodes
