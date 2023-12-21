@@ -1,12 +1,11 @@
 import Game_Logic.SliderPuzzleGame as Game
-import Algorithms.AStar as AStar
+import Algorithms.AStar_Search as AStar
 
 
 def print_goal_state():
     print("Goal State: ")
     goal = Game.SliderPuzzleGame(3)
-    goal.initialize_board([[1, 2, 3], [4, 5, 6], [7, 8, 0]])
-    goal.print_board()
+    goal.print_goal_board()
     print("\n")
 
 

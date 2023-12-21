@@ -1,5 +1,5 @@
 import Game_Logic.SliderPuzzleGame as Game
-import Algorithms.AStar as AStar
+import Algorithms.AStar_Search as AStar
 import EBFCalculator.EBF as EBF
 
 
